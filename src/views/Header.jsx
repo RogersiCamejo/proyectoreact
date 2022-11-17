@@ -1,10 +1,22 @@
-import LogoNetflix from '../icons/netflix';
-function Header(){
-    return (
-        <header className="App-header">
-        <LogoNetflix />
-        <p> asdf <code>src/App.js</code> and save to reload. </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer"> Learn React </a>
-    </header>);
+import LogoNetflix from "../assets/icons/netflix";
+function Header() {
+	return (
+		<header className="App-header">
+			<LogoNetflix />
+			<p>
+				{" "}
+				asdf <code>src/App.js</code> and save to reload.{" "}
+			</p>
+			<a
+				className="App-link"
+				href="https://reactjs.org"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{" "}
+				Learn React{" "}
+			</a>
+		</header>
+	);
 }
 export default Header;
