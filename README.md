@@ -1,4 +1,4 @@
-# Netflix Clon App | 📝
+# Netflix Clon App | 🍿
 
 Proyecto de Clon de Netflix con React utilizando Vite.
 
