@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import React from "react";
 
 const Banner = ({ item }) => {
@@ -12,12 +10,9 @@ const Banner = ({ item }) => {
 				<h1>{item?.name}</h1>
 				<p>{item?.description}</p>
 				<div>
-					<button className="button">
-						<FontAwesomeIcon icon="fa-solid fa-play" /> Reproducir
-					</button>
+					<button className="button">Reproducir</button>
 					<button className="button button-alt">
-						<FontAwesomeIcon icon="fa-solid fa-circle-info" /> Más
-						Información
+						Más Información
 					</button>
 				</div>
 			</div>
