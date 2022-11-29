@@ -1,0 +1,139 @@
+//@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+@import './_variables.scss';
+
+body {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: $background;
+    color: $white;
+}
+
+.swiperCards {
+    z-index: -1;
+    margin: 0 0 3rem 0;
+
+    .swiper-button-prev, .swiper-button-next {
+        color: white!important;
+        transition: all ease-in-out .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 225px;
+        transition: all ease-in-out .3s;
+
+        .cardSlider {
+            
+        transition: all ease-in-out .3s;
+            height: 175px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+            .titleContainer {
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
+                background: linear-gradient(360deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+                display: flex;
+                align-items: end;
+        
+                h1{
+                    color: $white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            .cardSlider {
+                height: 200px;
+            }
+        }
+    }
+
+    
+}
+
+.bg-navbar {
+    height: 68px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.banner {
+    margin: -68px 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    .bannerContainer{
+        
+        height: 100%;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .button {
+        padding: .75rem 2rem;
+        background-color: rgba($white, .8);
+        border: 0;
+        font-size: 1.7rem;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-right: 1rem;
+
+        &-alt {
+            background-color: rgba($white, .2);
+            color: $white;
+
+        }
+    }
+}
+
+.form-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 250px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .bg-navbar {
+        padding: 0 4rem;
+    }
+
+    .banner {
+    
+        .bannerContainer{
+            
+        padding: 0 4rem;
+        width: 60%;
+    
+        }
+    }
+    
+}

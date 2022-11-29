@@ -1,16 +1,14 @@
-import { useState } from "react";
-import "./App.css";
-import logo from "/src/assets/icons/logo.svg";
-import "/src/assets/icons/icono.css";
-import Header from "./views/Header";
+import React from "react";
+import AuthProvider from "./auth/context/AuthProvider";
+import AppRoutes from "./routes/App.routes";
+import { reduce } from "./utils/reducer";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<Header />
-			<img src={logo} className="App-logo" alt="logo" />
-		</div>
+		<AuthProvider>
+			<AppRoutes />
+		</AuthProvider>
 	);
-}
+};
 
 export default App;
