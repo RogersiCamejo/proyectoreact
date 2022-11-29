@@ -73,14 +73,31 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-
-    .bannerContainer{
-        
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 0;
         height: 100%;
+        width: 100%;
+        content: '';
+        background-color: rgba(0,0,0,0.5);
+    }
+    .bannerContainer {
+        height: 100%;
+        z-index: 1;
+        position: relative;
         display: flex;
         width: 80%;
         flex-direction: column;
         justify-content: center;
+
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
 
     }
 
