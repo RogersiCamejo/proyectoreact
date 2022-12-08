@@ -10,6 +10,8 @@ Proyecto de Clon de Netflix con React utilizando Vite.
 
 3. npm i
 
-4. npm run dev
+4. Crear archivo .env con VITE_API_KEY y agregar el la key que obtenemos en themoviedb.org
+
+5. npm run dev
 
 o entrar [aquí](https://RogersiCamejo.github.io/proyectoreact/).
